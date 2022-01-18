@@ -1,0 +1,4 @@
+#ifndef INTERSECTION_WITH_H
+#define INTERSECTION_WITH_H
+
+#endif

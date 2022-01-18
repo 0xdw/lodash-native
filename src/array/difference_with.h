@@ -1,0 +1,4 @@
+#ifndef DIFFERENCE_WITH_H
+#define DIFFERENCE_WITH_H
+
+#endif

@@ -1,0 +1,4 @@
+#ifndef SORTED_LAST_INDEX_H
+#define SORTED_LAST_INDEX_H
+
+#endif
