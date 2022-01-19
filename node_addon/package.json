@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-gyp clean rebuild --release",
+    "build:dev": "node-gyp configure build --debug",
     "install": "node-gyp rebuild"
   },
   "author": "Dinindu D. Wanniarachchi",

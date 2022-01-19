@@ -5,7 +5,7 @@
 			"type": "npm",
 			"script": "build:dev",
 			"path": "node_addon/",
-			"group": "rebuild",
+			"group": "build",
 			"problemMatcher": [],
 			"label": "npm: build:dev - node_addon",
 			"detail": "node-gyp configure build --debug"

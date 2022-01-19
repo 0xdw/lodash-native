@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "node",
-            "preLaunchTask": "npm: build:dev",
+            "preLaunchTask": "npm: build:dev - node_addon",
             "args": [
                 "${workspaceFolder}/node_addon/lodash.js"
             ]
