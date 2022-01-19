@@ -1,7 +1,7 @@
 TARGET_EXEC := lodash
 
 BUILD_DIR := ./build
-SRC_DIRS := ./src
+SRC_DIRS := ./lib
 BIN_DIR := ./bin
 
 # Find all the C and C++ files we want to compile
