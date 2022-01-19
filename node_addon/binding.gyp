@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "lodash_native",
-      "sources": [ "lodash.cc" ]
+      "sources": [ "lodash_addon.c" ]
     }
   ]
 }
