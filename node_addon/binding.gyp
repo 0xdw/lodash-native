@@ -2,7 +2,10 @@
   "targets": [
     {
       "target_name": "lodash_native",
-      "sources": [ "lodash_addon.c" ]
+      "sources": [
+        "../lib/array/chunk.c",
+        "lodash_addon.c" 
+      ]
     }
   ]
 }

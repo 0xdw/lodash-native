@@ -1,23 +1,21 @@
 #include <assert.h>
 #include <node_api.h>
 
-static napi_value Method(napi_env env, napi_callback_info info) {
-  napi_status status;
-  napi_value world;
-  const char* out = "world";
-  status = napi_create_string_utf8(env, out, strlen(out), &world);
-  assert(status == napi_ok);
-  return world;
-}
+#include "../lib/lodash.h"
 
-#define DECLARE_NAPI_METHOD(name, func) \
-  { name, 0, func, 0, 0, 0, napi_default, 0 }
+static int property_count = 1;
+
+#define DECLARE_WITH_STATUS_CHECK(name, func) \
+  napi_property_descriptor chunk_desc = { name, 0, func, 0, 0, 0, napi_default, 0 }; \
+  status = napi_define_properties(env, exports, property_count, &chunk_desc); \
+  assert(status == napi_ok); \
+  property_count++;
 
 static napi_value Init(napi_env env, napi_value exports) {
   napi_status status;
-  napi_property_descriptor desc = DECLARE_NAPI_METHOD("hello", Method);
-  status = napi_define_properties(env, exports, 1, &desc);
-  assert(status == napi_ok);
+
+  DECLARE_WITH_STATUS_CHECK("chunk", chunk)
+
   return exports;
 }
 
