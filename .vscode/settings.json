@@ -1,0 +1,16 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.script": "lua",
+        "*.collection": "go",
+        "*.gui_script": "lua",
+        "*.gui": "go",
+        "*.particlefx": "go",
+        "lodash.h": "c",
+        "system_error": "c",
+        "xlocale": "c",
+        "internals.h": "c",
+        "functional": "c",
+        "xtr1common": "c"
+    }
+}

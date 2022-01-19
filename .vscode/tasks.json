@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:dev",
+			"path": "node_addon/",
+			"group": "rebuild",
+			"problemMatcher": [],
+			"label": "npm: build:dev - node_addon",
+			"detail": "node-gyp configure build --debug"
+		}
+	]
+}

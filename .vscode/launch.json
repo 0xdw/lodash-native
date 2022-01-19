@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "node",
+            "preLaunchTask": "npm: build:dev",
+            "args": [
+                "${workspaceFolder}/node_addon/lodash.js"
+            ]
+        }
+    ]
+}
