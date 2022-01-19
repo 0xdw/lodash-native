@@ -1,0 +1,4 @@
+#ifndef IS_ARRAY_LIKE_OBJECT_H
+#define IS_ARRAY_LIKE_OBJECT_H
+
+#endif
