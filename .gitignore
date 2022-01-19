@@ -53,3 +53,5 @@ dkms.conf
 .vscode
 lodash
 cli/
+build
+node_modules
