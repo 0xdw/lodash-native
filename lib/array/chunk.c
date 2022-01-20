@@ -2,6 +2,11 @@
 
 #include "../_internals/internals.h"
 
+static napi_value chunk() {
+  napi_value value;
+  return value;
+}
+
 napi_value chunk(napi_env env, napi_callback_info info) {
   napi_status status;
   napi_value value;
@@ -16,10 +21,6 @@ napi_value chunk(napi_env env, napi_callback_info info) {
     return NULL;
   }
 
-  napi_valuetype valuetype0;
-  status = napi_typeof(env, args[0], &valuetype0);
-  STATUS_CHECK
-
   bool is_array = 0;
   status = napi_is_array(env, args[0], &is_array);
   STATUS_CHECK
@@ -29,12 +30,7 @@ napi_value chunk(napi_env env, napi_callback_info info) {
     return NULL;
   }
 
-  napi_value array;
-  status = napi_create_array(env, &array);
-  STATUS_CHECK
+  // todo: Implement the logic
 
-  status = napi_set_element(env, array, 0, args[0]);
-  STATUS_CHECK
-
-  return array;
+  return args[0];
 }
