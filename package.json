@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha test/**/*.spec.js",
     "build": "node-gyp clean rebuild --release",
     "build:dev": "node-gyp build --debug",
     "install": "node-gyp rebuild"

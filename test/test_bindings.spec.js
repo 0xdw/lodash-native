@@ -1,7 +1,7 @@
 const mocha = require("mocha");
 const { assert } = require("chai");
 
-const lodash_native = require("bindings")("lodash_native.node");
+const lodash_native = require("../src/binding");
 
 it("chunk", () => assert.exists(lodash_native.chunk));
 it("compact", () => assert.exists(lodash_native.compact));
