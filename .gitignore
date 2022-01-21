@@ -54,3 +54,4 @@ lodash
 cli/
 build
 node_modules
+.vscode

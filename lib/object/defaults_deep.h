@@ -1,4 +1,9 @@
 #ifndef DEFAULTS_DEEP_H
 #define DEFAULTS_DEEP_H
 
+#include <assert.h>
+#include <node_api.h>
+
+napi_value lodash_defaults_deep(napi_env env, napi_callback_info info);
+
 #endif

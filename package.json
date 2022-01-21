@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "node-gyp clean rebuild --release",
-    "build:dev": "node-gyp configure build --debug",
+    "build:dev": "node-gyp build --debug",
     "install": "node-gyp rebuild"
   },
   "author": "Dinindu D. Wanniarachchi",
   "license": "ISC",
   "gypfile": true,
   "dependencies": {
+    "bindings": "^1.5.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4",
     "nan": "^2.15.0"
   }
 }
