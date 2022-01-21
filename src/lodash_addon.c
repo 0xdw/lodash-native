@@ -53,10 +53,8 @@ static napi_value Init(napi_env env, napi_value exports) {
   DECLARE_WITH_STATUS_CHECK(1, "sorted_index_by", lodash_sorted_index_by)
   DECLARE_WITH_STATUS_CHECK(1, "sorted_index_of", lodash_sorted_index_of)
   DECLARE_WITH_STATUS_CHECK(1, "sorted_last_index", lodash_sorted_last_index)
-  DECLARE_WITH_STATUS_CHECK(1, "sorted_last_index_by",
-                            lodash_sorted_last_index_by)
-  DECLARE_WITH_STATUS_CHECK(1, "sorted_last_index_of",
-                            lodash_sorted_last_index_of)
+  DECLARE_WITH_STATUS_CHECK(1, "sorted_last_index_by", lodash_sorted_last_index_by)
+  DECLARE_WITH_STATUS_CHECK(1, "sorted_last_index_of", lodash_sorted_last_index_of)
   DECLARE_WITH_STATUS_CHECK(1, "sorted_uniq", lodash_sorted_uniq)
   DECLARE_WITH_STATUS_CHECK(1, "sorted_uniq_by", lodash_sorted_uniq_by)
   DECLARE_WITH_STATUS_CHECK(1, "tail", lodash_tail)
@@ -143,8 +141,7 @@ static napi_value Init(napi_env env, napi_value exports) {
   DECLARE_WITH_STATUS_CHECK(1, "is_array", lodash_is_array)
   DECLARE_WITH_STATUS_CHECK(1, "is_array_buffer", lodash_is_array_buffer)
   DECLARE_WITH_STATUS_CHECK(1, "is_array_like", lodash_is_array_like)
-  DECLARE_WITH_STATUS_CHECK(1, "is_array_like_object",
-                            lodash_is_array_like_object)
+  DECLARE_WITH_STATUS_CHECK(1, "is_array_like_object", lodash_is_array_like_object)
   DECLARE_WITH_STATUS_CHECK(1, "is_boolean", lodash_is_boolean)
   DECLARE_WITH_STATUS_CHECK(1, "is_buffer", lodash_is_buffer)
   DECLARE_WITH_STATUS_CHECK(1, "is_date", lodash_is_date)
