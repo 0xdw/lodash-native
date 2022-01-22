@@ -1,5 +1,5 @@
 {
-  "name": "lodash-native",
+  "name": "@0xdw/lodash-native",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
