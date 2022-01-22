@@ -55,3 +55,4 @@ cli/
 build
 node_modules
 .vscode
+test.js
