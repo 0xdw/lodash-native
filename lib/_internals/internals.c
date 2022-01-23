@@ -16,8 +16,8 @@ napi_value array_slice(napi_env env, napi_value array, size_t length,
   STATUS_CHECK
 
   size_t ii = 0;
+  napi_value n;
   for (size_t i = from; i < to && i < length; i++) {
-    napi_value n;
     status = napi_get_element(env, array, i, &n);
     STATUS_CHECK
     status = napi_set_element(env, value, ii, n);
