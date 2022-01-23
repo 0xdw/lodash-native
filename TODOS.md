@@ -1,12 +1,12 @@
 Todos
 =====
 
-Completed 1/295
+Completed 2/295
 
 Array
 -----
 - [x] [chunk](lib/array/chunk.c)
-- [ ] [compact](lib/array/compact.c)
+- [x] [compact](lib/array/compact.c)
 - [ ] [concat](lib/array/concat.c)
 - [ ] [difference](lib/array/difference.c)
 - [ ] [difference_by](lib/array/difference_by.c)
