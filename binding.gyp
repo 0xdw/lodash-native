@@ -9,7 +9,12 @@
       ],
       'msvs_settings': {
         'VCCLCompilerTool': { 'ExceptionHandling': 1 },
-      }
+      },
+      "conditions": [
+        ["OS == 'win'", {
+          "libraries": []
+        }]
+      ]
     }
   ]
 }
