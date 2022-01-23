@@ -50,9 +50,8 @@ napi_value lodash_chunk(napi_env env, napi_callback_info info) {
   while (index < length) {
     size_t i = index + size;
     napi_value s = array_slice(env, array, length, index, i);
-    status = napi_set_element(env, result, rindex, s);
+    status = napi_set_element(env, result, rindex++, s);
     STATUS_CHECK
-    rindex++;
     index = i;
   }
 
