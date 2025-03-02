@@ -1,8 +1,6 @@
 Lodash Native
 =======
 
-Written by Dinindu D. Wanniarachchi (@0xdw)
-
 Under development
 ----
 
